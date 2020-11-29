@@ -1,0 +1,64 @@
+.header{
+    height: 80px;
+    background: #4045BA;
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    &__logo{
+        a{
+            font-size: 24px;
+            line-height: 29px;
+            font-weight: 600; 
+
+            
+        } 
+    }
+    &__nav{
+        ul{
+            display: flex;
+            font-weight: 600;
+            li{
+                padding: 8px 16px;
+                border-radius: 10px;
+                cursor: pointer;
+                a{
+                    color: $black;
+                    
+                }
+
+            }
+            li:first-child{
+                background-color: $white;
+                a{
+                    color: $primary;
+                }
+            }
+            li:last-child{
+                border: 1px solid $black;
+                background-color: $violet; 
+            }
+            li:nth-child(2),
+            li:nth-child(3),
+            li:nth-child(4),
+            li:nth-child(5){
+                margin-left: 35px;
+                a{
+                    color: $white;
+                }
+                
+            }
+
+            li:nth-child(2):hover,
+            li:nth-child(3):hover,
+            li:nth-child(4):hover{
+                background-color: $white;
+                a{
+                    color: $primary;
+                }
+            }
+        }
+    }
+}

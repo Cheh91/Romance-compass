@@ -1,0 +1,21 @@
+// .btn{
+//     background-color: $white;
+//     min-width: 136px;
+//     width: 100%;
+//     height: 40px;
+//     &-left{
+//         a{
+
+//         }
+//     }
+// }
+
+button{
+    width: 288px;
+    height: 40px;
+    border-radius: 10px;
+    background: $white;
+    outline: none;
+    border: none;
+}
+

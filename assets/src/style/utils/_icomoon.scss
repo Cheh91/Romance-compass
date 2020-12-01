@@ -1,18 +1,30 @@
+// @font-face {
+//   font-family: 'icomoon';
+//   src:  url('../../fonts/icomoon.eot?mrhy8w');
+//   src:  url('../../fonts/icomoon.eot?mrhy8w#iefix') format('embedded-opentype'),
+//     url('../../fonts/icomoon.ttf?mrhy8w') format('truetype'),
+//     url('../../fonts/icomoon.woff?mrhy8w') format('woff'),
+//     url('../../fonts/icomoon.svg?mrhy8w#icomoon') format('svg');
+//   font-weight: normal;
+//   font-style: normal;
+//   font-display: block;
+// }
+
 @font-face {
-  font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?4cilw7');
-  src:  url('../fonts/icomoon.eot?4cilw7#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?4cilw7') format('truetype'),
-    url('../fonts/icomoon.woff?4cilw7') format('woff'),
-    url('../fonts/icomoon.svg?4cilw7#icomoon') format('svg');
+  font-family: 'ntsame';
+  src:  url('../../fonts/icons/ntsame.eot?6hgw0o');
+  src:  url('../../fonts/icons/ntsame.eot?6hgw0o#iefix') format('embedded-opentype'),
+    url('../../fonts/icons/ntsame.ttf?6hgw0o') format('truetype'),
+    url('../../fonts/icons/ntsame.woff?6hgw0o') format('woff'),
+    url('../../fonts/icons/ntsame.svg?6hgw0o#ntsame') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
-[class^="icon-"], [class*=" icon-"] {
+[class^="nts-"], [class*=" nts-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
+  font-family: 'ntsame' !important;
   speak: never;
   font-style: normal;
   font-weight: normal;
@@ -25,22 +37,187 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-chat-icon:before {
+.nts-arrow-back:before {
   content: "\e900";
+  color: #fff;
+}
+.nts-arrow-down:before {
+  content: "\e901";
+  color: #777;
+}
+.nts-arrow-right:before {
+  content: "\e902";
+  color: #fff;
+}
+.nts-arrow-slick:before {
+  content: "\e903";
+  color: #352f55;
+}
+.nts-camera-icon:before {
+  content: "\e904";
+  color: #4b4dc8;
+}
+.nts-card-icon:before {
+  content: "\e905";
+  color: #fff;
+}
+.nts-chat-icon:before {
+  content: "\e906";
   color: #4045ba;
 }
-.icon-facebook:before {
-  content: "\e901";
+.nts-chat-start:before {
+  content: "\e907";
+  color: #fff;
+}
+.nts-check-mark-icon:before {
+  content: "\e908";
+}
+.nts-clip-icon:before {
+  content: "\e909";
+  color: #4045ba;
+}
+.nts-contact-icon:before {
+  content: "\e90a";
+  color: #91b0e2;
+}
+.nts-credits-icon:before {
+  content: "\e90b";
+  color: #fff;
+}
+.nts-delete-icon:before {
+  content: "\e90c";
+  color: #ef4040;
+}
+.nts-drafts-icon:before {
+  content: "\e90d";
+  color: #4045ba;
+}
+.nts-edit-icon:before {
+  content: "\e90e";
+  color: #4045ba;
+}
+.nts-facebook:before {
+  content: "\e90f";
   color: #2d4486;
 }
-.icon-message-icon:before {
-  content: "\e902";
+.nts-favorite-icon:before {
+  content: "\e910";
+  color: #e1db4b;
+}
+.nts-inbox-icon:before {
+  content: "\e911";
+  color: #fff;
+}
+.nts-interest:before {
+  content: "\e912";
+  color: #ef4040;
+}
+.nts-login-icon:before {
+  content: "\e913";
+  color: #4db0fe;
+}
+.nts-log-out-icon:before {
+  content: "\e914";
+  color: #fff;
+}
+.nts-manage-icon .path1:before {
+  content: "\e915";
+  color: rgb(252, 87, 59);
+}
+.nts-manage-icon .path2:before {
+  content: "\e916";
+  margin-left: -1em;
+  color: rgb(249, 140, 121);
+}
+.nts-message-icon:before {
+  content: "\e917";
   color: #ce49d0;
 }
-.icon-video-icon:before {
-  content: "\e903";
-  color: #ed6e7f;
+.nts-monets-icon:before {
+  content: "\e918";
+  color: #4045ba;
 }
-.icon-check:before {
-  content: "\e949";
+.nts-personal-icon:before {
+  content: "\e919";
+  color: #5597fe;
+}
+.nts-photo-icon:before {
+  content: "\e91a";
+  color: #fff;
+}
+.nts-preferences-icon:before {
+  content: "\e91b";
+  color: #fff;
+}
+.nts-present-icon:before {
+  content: "\e91c";
+  color: #e2c291;
+}
+.nts-preview-icon:before {
+  content: "\e91d";
+  color: #be63f9;
+}
+.nts-profiles-icon:before {
+  content: "\e91e";
+  color: #91b0e2;
+}
+.nts-puzzle-icon:before {
+  content: "\e91f";
+  color: #a549d0;
+}
+.nts-search-icon .path1:before {
+  content: "\e920";
+  color: rgb(64, 186, 179);
+}
+.nts-search-icon .path2:before {
+  content: "\e921";
+  margin-left: -1em;
+  color: rgb(83, 217, 209);
+}
+.nts-search-icon .path3:before {
+  content: "\e922";
+  margin-left: -1em;
+  color: rgb(83, 217, 209);
+}
+.nts-search-icon .path4:before {
+  content: "\e923";
+  margin-left: -1em;
+  color: rgb(83, 217, 209);
+}
+.nts-sent-letter-icon:before {
+  content: "\e924";
+  color: #4045ba;
+}
+.nts-slavic-icon:before {
+  content: "\e925";
+  color: #a549d0;
+}
+.nts-special-icon:before {
+  content: "\e926";
+  color: #a549d0;
+}
+.nts-trash-icon:before {
+  content: "\e927";
+  color: #4045ba;
+}
+.nts-unread-icon:before {
+  content: "\e928";
+  color: #4045ba;
+}
+.nts-upload-icon:before {
+  content: "\e929";
+  color: #4b4dc8;
+}
+.nts-video-clips-icon .path1:before {
+  content: "\e92a";
+  color: rgb(64, 69, 186);
+}
+.nts-video-clips-icon .path2:before {
+  content: "\e92b";
+  margin-left: -1em;
+  color: rgb(127, 131, 235);
+}
+.nts-video-icon:before {
+  content: "\e92c";
+  color: #ed6e7f;
 }

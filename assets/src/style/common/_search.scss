@@ -1,4 +1,75 @@
 .search{
+    &__title{
+        font-size: 36px;
+        line-height: 43px;
+        color: $blue-magenta;
+        font-weight: 600;
+        margin-top: 55px;
+    }
+    &__drop-wrapper{
+        display: flex;
+        margin: 0 -12px;
+    }
+    &__drop{
+        display: flex;
+        align-items: center;
+        padding-top: 25px;
+        padding-bottom: 40px;
+        padding-left: 12px;
+        padding-right: 12px;
+        &:nth-child(3) .search__drop-menu,
+        &:nth-child(3) .search__drop-sub-menu{
+            min-width: 104px;
+        }
+        &-title{
+            font-size: 14px;
+            line-height: 17px;
+            color: $blue-magenta;
+        }
+        &-item{
+            margin-left: 15px;
+        }
+        &-menu{
+            min-width: 156px;
+            width: 100%;
+            border: 1px solid $drop-border;
+            cursor: pointer;
+            background-color: $drop-bg;
+            border-radius: 10px;
+            position: relative;
+            li{
+                padding: 16px 0px 16px 12px;
+                a{
+                    color: $blue-magenta;
+                }
+            }
+            &:after{
+                position: absolute;
+                font-family: 'ntsame';
+                content: "\e901";
+                right: 18px;
+                top: 50%;
+                transform: translate(0, -50%);
+                font-size: 16px;
+            }
+        }
+        &-sub-menu{
+            display: block;
+            min-width: 156px;
+            border: 1px solid $drop-border;
+            border-radius: 10px;
+            background-color: $drop-bg;
+            position: absolute;
+            margin-top: 10px;
+            li{
+                padding: 10px 0px 10px 12px;
+                a{
+                    color: $blue-magenta;
+                    display: block;
+                }
+            }
+        }
+    }
     &__wrapper{
         margin: 0px -12px;
         display: flex;
@@ -10,7 +81,8 @@
         // background-color: red;
         margin-bottom: 24px;
         &-inner{
-            background-color: $light-gray;
+            // background-color: $light-gray;
+            background-color: $turquoise;
             border-radius: 10px;
             padding: 8px;
             display: flex;
@@ -47,29 +119,56 @@
                 a{
                     display: flex;
                     align-items: center;
-                    i{
+                    span{
                         width: 32px;
                         height: 32px;
                         border-radius: 5px;
+                        
                         &.chat-icon{
                             background-color: rgba(64, 69, 186, 0.2);
                             position: relative;
                             &:before{
                                 position: absolute;
-                                content: "\e901";
-                                font-family: 'icomoon';
-                                left: 0;
-                                top: 0;
+                                content: "\e906";
+                                font-family: 'ntsame';
+                                font-size: 24px;
+                                color: #4045BA;
+                                left: 50%;
+                                top: 50%;
+                                transform: translate(-50%, -50%);
                             }
                         }
                         &.message-icon{
                             background-color: rgba(206, 73, 208, 0.2);
+                            position: relative;
+                            &:before{
+                                position: absolute;
+                                content: "\e917";
+                                font-family: 'ntsame';
+                                font-size: 24px;
+                                color: #CE49D0;
+                                left: 50%;
+                                top: 50%;
+                                transform: translate(-50%, -50%);
+                            }
+
                         }
                         &.clips-icon{
                             background-color: rgba(237, 110, 127, 0.2);
+                            position: relative;
+                            &:before{
+                                position: absolute;
+                                content: "\e92c";
+                                font-family: 'ntsame';
+                                font-size: 24px;
+                                color: #ED6E7F;
+                                left: 50%;
+                                top: 50%;
+                                transform: translate(-50%, -50%);
+                            }
                         }
                     }
-                    span{
+                    p{
                         font-size: 12px;
                         line-height: 14px;
                         padding-left: 12px;

@@ -1,0 +1,133 @@
+.footer{
+    background-color: $blue;
+    padding-top: 56px;
+    &__content{
+        background-color: $primary
+    }
+    &__wrapper{
+        padding-top: 40px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item{
+        &-left{
+            display: flex;
+            flex-direction: column;
+            max-width: 420px;
+            width: 100%;
+        }
+        &-subscribe{
+            color: $white;
+            font-size: 16px;
+            line-height: 19px;
+            text-transform: uppercase;
+            // margin-bottom: 42px;
+        }
+        &-letter{
+            font-size: 18px;
+            line-height: 22px;
+            text-transform: uppercase;
+            margin-top: 42px;
+        }
+        &-input{
+            margin-top: 20px;
+            position: relative;
+            width: 420px;
+        }
+        &-email{
+            border: none;
+            outline: none;
+            width: 420px;
+            font-size: 14px;
+            line-height: 48px;
+            padding-left: 12px;
+            padding-right: 40px;
+            color: $white;
+            background-color: $blue;
+            border-radius: 10px;
+            &::placeholder{
+                color: rgba(255, 255, 255, 0.5);
+            }
+            &-btn{
+                width: 15px;
+                height: 15px;
+                // background-color: red;
+                position: absolute;
+                right: 20px;
+                top: 50%;
+                transform: translate(0, -50%);
+                &:before{
+                    position: absolute;
+                    font-family: 'ntsame';
+                    content: "\e902";
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+        }
+        &-checkbox{
+            display: flex;
+            align-items: center;
+            margin-top: 16px;
+            // input{
+            //     background-color: red;
+            // }
+            &-input{
+                width: 24px;
+                height: 24px;
+                border-radius: 5px;
+                
+            }
+            &-text{
+                font-size: 14px;
+                line-height: 17px;
+                color: $white;
+                font-weight: 600;
+                margin-left: 12px;
+            }
+        }
+        &-right{
+            padding-top: 8px;
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+        }
+        &-block{
+            li{
+                margin-bottom: 14px;
+                a{
+                    font-size: 18px;
+                    line-height: 21px;
+                    color: $white;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+    &__bottom{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 64px;
+        padding-bottom: 32px;
+        &-left{
+            &-privacy{
+                font-size: 14px;
+                line-height: 16px;
+                color: rgba(255, 255, 255, 0.8);
+            }
+            &-terms{
+                font-size: 14px;
+                line-height: 16px;
+                color: rgba(255, 255, 255, 0.8);
+                margin-left: 24px;
+            }
+        }
+        &-right{
+            font-size: 14px;
+            line-height: 16px;
+            color: rgba(255, 255, 255, 0.8);
+        }
+    }
+    
+}

@@ -10,16 +10,42 @@
 //     }
 // }
 
-button{
-    width: 288px;
-    height: 40px;
-    border-radius: 10px;
-    background: $white;
-    outline: none;
-    border: none;
-}
-
-// .button-facebook{
-//     height: 48px;
+// button{
+//     width: 288px;
+//     height: 40px;
+//     border-radius: 10px;
+//     background: $white;
+//     outline: none;
+//     border: none;
 // }
+
+
+.btn{
+    display: inline-block;
+    min-width: 116px;
+    text-align: center;
+    border-radius: 15px;
+    line-height: 48px;
+    font-size: 16px;
+    font-weight: 600;
+
+    &.btn-secondary{
+        background-color: $violet;
+    }
+
+    // &-sm{
+    //     line-height: 
+    // }
+
+    // &-
+
+    &.btn-white{
+        background-color: $white;
+        color: $darkBlue;
+    }
+    &.btn-security{
+        line-height: 40px;
+        padding: 5px;
+    }
+}
 

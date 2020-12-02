@@ -15,65 +15,61 @@
     &__left{
         max-width: 288px;
         width: 100%;
-        input{
-            width: 100%;
-            padding-left: 12px;
-            padding-right: 12px;
+        &-col{
             margin-bottom: 15px;
-            line-height: 46px;
-            background-color: rgba(255, 255, 255, 0.1);
-            outline: none;
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            border-radius: 10px;
-            font-weight: 300;
-            color: $white;
-            
-            &::placeholder{
+            &:last-child{
+                margin-bottom: 0px;
+            }
+            input{
+                width: 100%;
+                padding-left: 12px;
+                padding-right: 12px;
+                line-height: 46px;
+                background-color: rgba(255, 255, 255, 0.1);
+                outline: none;
+                border: 1px solid rgba(255, 255, 255, 0.3);
+                border-radius: 10px;
+                font-weight: 300;
                 color: $white;
+                &::placeholder{
+                    color: $white;
+                }
             }
-        }
-        p{
-            color: $white;
-            font-size: 14px;
-            line-height: 16px;
-            width: 100%;
-        }
-        .btn-box{
-            display: flex;
-            justify-content: space-between;
-            margin-top: 10px;
-        }
-        .button-left{
-            position: relative;
-            width: 136px;
-            &:before{
-                position: absolute;
-                content: url("../img/mcafee.png");
-                left: 50%;
-                top: 50%;
-                transform: translate(-50%, -50%);
+            p{
+                color: $white;
+                font-size: 14px;
+                line-height: 16px;
+                width: 100%;
             }
-        }
-        .button-right{
-            position: relative;
-            width: 136px;
-            &:before{
-                position: absolute;
-                content: url("../img/norton-security.png");
-                left: 50%;
-                top: 50%;
-                transform: translate(-50%, -50%);
+            .btn{
+                width: 100%;
             }
-        }
-        .button-join{
-            width: 100%;
-            height: 48px;
-            font-size: 16px;
-            line-height: 19px;
-            font-weight: 600;
-            color: $white;
-            background-color: $violet;
-            margin-top: 15px;
+            &:last-child .btn{
+                position: relative;
+                &:before{
+                    position: absolute;
+                    font-family: "ntsame";
+                    content: "\e90f";
+                    color: #2D4486;
+                    left: 15px;
+                    top: 50%;
+                    transform: translate(0, -50%);
+                    font-size: 24px;
+                    z-index: 10;
+                } 
+            }
+            .btn-wrap{
+                display: flex;
+                justify-content: space-between;
+                margin: 0 -8px;
+                .btn__item{
+                    padding: 0 8px;
+                    width: 50%;
+                    a{
+                        width: 100%;
+                    }
+                }
+            }
         }
         strong{
             display: block;
@@ -82,24 +78,6 @@
             line-height: 17px;
             font-weight: 600;
             margin: 12px 0;
-        }
-        .button-facebook{
-            font-size: 16px;
-            line-height: 19px;
-            color: $darkBlue;
-            font-weight: 600;
-            position: relative;
-            height: 48px;
-            &:before{
-                position: absolute;
-                font-family: "ntsame";
-                content: "\e90f";
-                color: #2D4486;
-                left: 15px;
-                top: 50%;
-                transform: translate(0, -50%);
-                font-size: 24px;
-            }
         }
     }
     &__right{
@@ -114,7 +92,7 @@
         background-size: cover;
         h3{
             margin-top: 45px;
-            // background-color: rgba(255, 255, 255, 0.3);
+            // background-color: rgba(255, 255, 255, 0.3);btn
             background: linear-gradient(90deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 100%);
             filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
             padding: 24px 32px;
@@ -124,7 +102,6 @@
             font-weight: 600;
         }
         &-item{
-
             ul{
                 // background-color: rgba(255, 255, 255, 0.3);
                 background: linear-gradient(90deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 100%);
@@ -144,7 +121,7 @@
                 }
             }
         }
-    }
-    
+    } 
 }
+
 

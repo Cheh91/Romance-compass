@@ -18,8 +18,18 @@
         padding-left: 12px;
         padding-right: 12px;
         &:nth-child(3) .search__drop-menu,
-        &:nth-child(3) .search__drop-sub-menu{
+        &:nth-child(3) .search__drop-sub-menu,
+        &:nth-child(4) .search__drop-menu,
+        &:nth-child(4) .search__drop-sub-menu
+        {
             min-width: 104px;
+        }
+        &:nth-child(5) .search__drop-menu,
+        &:nth-child(5) .search__drop-sub-menu{
+            min-width: 219px;
+        }
+        &:nth-child(5) .search__drop-item{
+            margin-left: 0px;
         }
         &-title{
             font-size: 14px;
@@ -69,6 +79,13 @@
                 }
             }
         }
+        &-button{
+            flex-grow: 1;
+            .btn{
+                width: 100%;
+            }
+        }
+          
     }
     &__wrapper{
         margin: 0px -12px;
@@ -131,7 +148,7 @@
                                 position: absolute;
                                 content: "\e906";
                                 font-family: 'ntsame';
-                                font-size: 24px;
+                                font-size: 18px;
                                 color: #4045BA;
                                 left: 50%;
                                 top: 50%;
@@ -145,7 +162,7 @@
                                 position: absolute;
                                 content: "\e917";
                                 font-family: 'ntsame';
-                                font-size: 24px;
+                                font-size: 18px;
                                 color: #CE49D0;
                                 left: 50%;
                                 top: 50%;
@@ -160,7 +177,7 @@
                                 position: absolute;
                                 content: "\e92c";
                                 font-family: 'ntsame';
-                                font-size: 24px;
+                                font-size: 18px;
                                 color: #ED6E7F;
                                 left: 50%;
                                 top: 50%;

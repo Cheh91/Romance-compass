@@ -8,13 +8,23 @@
         line-height: 29px;
         color: $white;
         margin-bottom: 25px;
+        @media (max-width: 900px){
+            text-align: center;
+        }
     }
     &__wrapper{
         display: flex;
+        @media (max-width: 900px){
+            flex-direction: column;
+        }
     }
     &__left{
         max-width: 288px;
         width: 100%;
+        @media (max-width: 900px){
+            max-width: 500px;
+            margin: 0 auto;
+        }
         &-col{
             margin-bottom: 15px;
             &:last-child{
@@ -24,7 +34,7 @@
                 width: 100%;
                 padding-left: 12px;
                 padding-right: 12px;
-                line-height: 46px;
+                line-height: 44px;
                 background-color: rgba(255, 255, 255, 0.1);
                 outline: none;
                 border: 1px solid rgba(255, 255, 255, 0.3);
@@ -54,9 +64,6 @@
             }
             &:last-child .btn{
                 position: relative;
-                // &:before:hover{
-                //     color: #fff;
-                // }
                 &:before{
                     position: absolute;
                     font-family: "ntsame";
@@ -92,15 +99,24 @@
         }
     }
     &__right{
-        max-width: 900px;
+        max-width: 912px;
+        min-height: 428px;
+        height: 100%;
         width: 100%;
         height: auto;
         border: 8px solid $white;
         border-radius: 20px;
-        margin-left: 25px;
+        margin-left: 24px;
         background-image: url("../img/top-image.png");
         background-position: center;
         background-size: cover;
+        @media (max-width: 900px){
+            margin-left: 0px;
+            margin-top: 20px;
+        }
+         @media (max-width: 700px){
+            min-height: 350px;
+        }
         h3{
             margin-top: 45px;
             // background-color: rgba(255, 255, 255, 0.3);btn

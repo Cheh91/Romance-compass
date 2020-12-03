@@ -8,13 +8,20 @@
         padding-top: 40px;
         display: flex;
         justify-content: space-between;
+        @media (max-width: 700px){
+            flex-direction: column;
+        }
     }
     &__item{
         &-left{
             display: flex;
             flex-direction: column;
-            max-width: 420px;
-            width: 100%;
+            // max-width: 420px;
+            // width: 100%;
+            width: 35%;
+            @media (max-width: 700px){
+                width: 100%;
+            }
         }
         &-subscribe{
             color: $white;
@@ -32,12 +39,15 @@
         &-input{
             margin-top: 20px;
             position: relative;
-            width: 420px;
+            width: 100%;
+            @media (max-width: 700px){
+                max-width: 450px;
+            }
         }
         &-email{
             border: none;
             outline: none;
-            width: 420px;
+            width: 100%;
             font-size: 14px;
             line-height: 48px;
             padding-left: 12px;
@@ -85,13 +95,22 @@
                 color: $white;
                 font-weight: 600;
                 margin-left: 12px;
+                @media (max-width: 950px){
+                    max-width: 270px;
+                }
             }
         }
         &-right{
             padding-top: 8px;
             display: flex;
             justify-content: space-around;
-            width: 100%;
+            // width: 100%;
+            width: 65%;
+            @media (max-width: 700px){
+                width: 100%;
+                padding-top: 30px;
+                flex-direction: column;
+            }
         }
         &-block{
             li{
@@ -110,7 +129,14 @@
         justify-content: space-between;
         margin-top: 64px;
         padding-bottom: 32px;
+        @media (max-width: 700px){
+            flex-direction: column;
+        }
         &-left{
+            display: flex;
+            @media (max-width: 700px){
+                flex-direction: column;
+            }
             &-privacy{
                 font-size: 14px;
                 line-height: 16px;
@@ -121,13 +147,23 @@
                 line-height: 16px;
                 color: rgba(255, 255, 255, 0.8);
                 margin-left: 24px;
+                @media (max-width: 700px){
+                    margin-left: 0px;
+                    margin-top: 10px;
+                }
             }
         }
         &-right{
             font-size: 14px;
             line-height: 16px;
             color: rgba(255, 255, 255, 0.8);
+            @media (max-width: 700px){
+                margin-top: 10px;
+            }
         }
+        // &-solution{
+        //     width: 100%;
+        // }
     }
     
 }

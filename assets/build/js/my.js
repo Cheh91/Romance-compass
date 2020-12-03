@@ -1,23 +1,28 @@
-// 'use strict';
+'use strict';
 
-// $(function(){
-//   $(".search__drop-menu").delegate(".search__drop-menu", "click", function(e) {
-//     e.preventDefault();
-//     value("sfse")
-//     // $(this).find(".search__drop-sub-menu").toggleClass("active");
-//   })
+// (function () {
+
+jQuery(document).ready(function () {
+    initDropdown();
+
+});
+
+    function initDropdown(){
+        $(".search__drop-menu").click(function () {
+            $(this).parent().toggleClass("active");
+            // console.log("привет")
+        })
+
+        $(".search__drop-sub-menu li").click(function(){
+            let currentele = $(this).html();
+            $(".search__drop-menu li").html(currentele);
+            $(this).parents(".search__drop-item").removeClass("active");
+        })
+    }
+
+
+
+    
 // })
 
-// function dropDownMenu(){
-//   $(".search__drop-menu").click(function(e){
-//     e.preventDefault();
-//     $(this).parent().toggleClass(active);
-//   })
-// }
-
-function dropdownMenu(){
-  $(".search__drop-menu").click(function(){
-    $(this).parent(".search__drop-item").show();
-  })
-}
 //# sourceMappingURL=my.js.map

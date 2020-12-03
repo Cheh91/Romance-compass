@@ -20,8 +20,7 @@
         &:nth-child(3) .search__drop-menu,
         &:nth-child(3) .search__drop-sub-menu,
         &:nth-child(4) .search__drop-menu,
-        &:nth-child(4) .search__drop-sub-menu
-        {
+        &:nth-child(4) .search__drop-sub-menu{
             min-width: 104px;
         }
         &:nth-child(5) .search__drop-menu,
@@ -38,6 +37,9 @@
         }
         &-item{
             margin-left: 15px;
+        }
+        &-item.active .search__drop-sub-menu{
+            display: block;
         }
         &-menu{
             min-width: 156px;
@@ -64,7 +66,7 @@
             }
         }
         &-sub-menu{
-            display: block;
+            display: none;
             min-width: 156px;
             border: 1px solid $drop-border;
             border-radius: 10px;
@@ -79,6 +81,10 @@
                 }
             }
         }
+        // &-sub-menu.active{
+        //     display: block;
+        // }
+
         &-button{
             flex-grow: 1;
             .btn{

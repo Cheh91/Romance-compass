@@ -1,8 +1,13 @@
 .header{
     height: 80px;
-    background: #4045BA;
+    background: #5358c1;
+    // background: rgba(255, 255, 255, 0.1);
+    // backdrop-filter: blur(100px);
     display: flex;
     align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
     &__wrapper{
         display: flex;
         justify-content: space-between;
@@ -17,9 +22,10 @@
         } 
     }
     &__nav{
-        ul{
+        &-item{
             display: flex;
             font-weight: 600;
+            align-items: center;
             li{
                 padding: 8px 16px;
                 border-radius: 10px;
@@ -37,7 +43,16 @@
             }
             li:last-child{
                 border: 1px solid $black;
-                background-color: $violet; 
+                background-color: $violet;
+                width: 116px;
+                line-height: 38px;
+                text-align: center;
+                padding: 0px;
+                border-radius: 15px;
+                transition: all .3s;
+                &:hover{
+                    background-color: transparent;
+                }
             }
             li:nth-child(2),
             li:nth-child(3),
@@ -46,17 +61,23 @@
                 margin-left: 35px;
                 a{
                     color: $white;
+                    transition: all .3s;
                 }
                 
             }
 
-            li:nth-child(2):hover,
-            li:nth-child(3):hover,
-            li:nth-child(4):hover{
-                background-color: $white;
-                a{
-                    color: $primary;
+            li:nth-child(2),
+            li:nth-child(3),
+            li:nth-child(4){
+                transition: all .3s;
+                &:hover{
+                    background-color: $white;
+                    a{
+                        color: $primary;
+                        transition: all .3s;
+                    }
                 }
+                
             } 
         }
     }

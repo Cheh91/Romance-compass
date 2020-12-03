@@ -1,7 +1,7 @@
 .top{
     border-top: 1px solid red;
     background-color: $primary;
-    padding-top: 55px;
+    padding-top: 135px;
     padding-bottom: 115px;
     h3{
         font-size: 24px;
@@ -44,8 +44,19 @@
             .btn{
                 width: 100%;
             }
+            &:nth-child(6){
+                &:hover{
+                      a{
+                        color: $violet;
+                    }
+                }
+              
+            }
             &:last-child .btn{
                 position: relative;
+                // &:before:hover{
+                //     color: #fff;
+                // }
                 &:before{
                     position: absolute;
                     font-family: "ntsame";

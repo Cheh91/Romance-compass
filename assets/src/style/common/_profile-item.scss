@@ -1,0 +1,22 @@
+.profile{
+    padding-top: 84px;
+    padding-left: 24px;
+    width: 100%;
+    background-color: #F2F6FA;
+    border-radius: 20px;
+    &__menu{
+        li{
+            border: 1px solid $primary;
+            border-radius: 8px;
+            margin-bottom: 8px;
+        }
+        &-item{
+            span{
+                width: 32px;
+                height: 32px;
+                border-radius: 5px;
+                background-color: rgba(64, 69, 186, 0.2);
+            }
+        }
+    }
+}

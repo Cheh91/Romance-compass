@@ -5,12 +5,15 @@
         color: $blue-magenta;
         font-weight: 600;
         margin-top: 55px;
+        //  min-width: 320px;
+        // overflow-x: hidden;
     }
     &__drop-wrapper{
         display: flex;
         margin: 0 -12px;
         margin-top: 15px;
         margin-bottom: 30px;
+       
     }
     &__drop{
         display: flex;

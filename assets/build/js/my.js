@@ -5,6 +5,7 @@
 jQuery(document).ready(function () {
     initDropdown();
     openHeaderMenu();
+    initSlider();
 
 });
 
@@ -37,6 +38,46 @@ jQuery(document).ready(function () {
         $(".header__nav").toggle(500);
       })
     }
+
+    function initSlider(){
+      $('.slick-slider').slick({
+        // dots: true,
+        // infinite: true,
+        // speed: 1000,
+        // slidesToShow: 1,
+        // centerMode: true,
+        // centerPadding: "120px",
+        // variableWidth: false,
+        // autoplay: true,
+        // fade: true,
+    })
+  }
+
+    // function initSlider(){
+    //   new Swiper(".swiper-container")
+    // }
+    //   var mySwiper = new Swiper('.swiper-container', {
+    //     // Optional parameters
+    //     direction: 'vertical',
+    //     loop: true,
+      
+    //     // If we need pagination
+    //     pagination: {
+    //       el: '.swiper-pagination',
+    //     },
+      
+    //     // Navigation arrows
+    //     navigation: {
+    //       nextEl: '.swiper-button-next',
+    //       prevEl: '.swiper-button-prev',
+    //     },
+      
+    //     // And if we need scrollbar
+    //     scrollbar: {
+    //       el: '.swiper-scrollbar',
+    //     },
+    //   })
+    // }
 
 
 

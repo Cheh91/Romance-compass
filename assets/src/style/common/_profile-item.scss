@@ -1,18 +1,72 @@
 .profile{
     padding-top: 84px;
+    padding-bottom: 10px;
     padding-left: 24px;
-    // width: 100%;
+    margin-top: -30px;
+    margin-bottom: 80px;
     background-color: #F2F6FA;
     border-radius: 20px;
-    // display: flex;
-    // flex-direction: row;
+    color: $blue-magenta;
+    position: relative;
+    @media (max-width: 990px){
+        padding-left: 0px;
+        background-color: transparent;
+    }
+    &-id{
+        position: absolute;
+        left: 24px;
+        top: 32px;
+        font-size: 18px;
+        line-height: 21px;
+        font-weight: 500;
+        color: #868686;
+        @media (max-width: 990px){
+            left: 0px;
+            top: 45px;
+        }
+    }
+    &__top{
+        padding-top: 110px;
+        padding-bottom: 60px;
+        background-color: $primary;
+        @media (max-width: 990px){
+            padding-top: 100px;
+            padding-bottom: 30px;
+        }
+        &-button{
+            padding-left: 40px;
+            color: $white;
+            font-size: 14px;
+            line-height: 18px;
+            font-weight: 600;
+            position: relative;
+            cursor: pointer;
+            &:before{
+                position: absolute;
+                content: "\e900";
+                font-family: "ntsame";
+                left: 0;
+                top: -1px;
+                font-size: 24px;
+            }
+        }
+    }
     &__wrapper{
         display: flex;
         flex-direction: row;
+        @media (max-width: 767px){
+            flex-direction: column;
+            
+        }
     }
     &__left{
-        max-width: 364px;
-        width: 100%;
+        // max-width: 364px;
+        // width: 100%;
+        width: 30%;
+        @media (max-width: 767px){
+            max-width: 364px;
+            width: 100%;
+        } 
     }
     &__image{
         
@@ -65,92 +119,86 @@
         height: 32px;
         border-radius: 5px;
     }
-    
-    &__chat-icon{
-        background-color: rgba(64, 69, 186, 0.2);
+
+    &__chat-icon,
+    &__message-icon,
+    &__video-icon,
+    &__present-icon,
+    &__interest-icon,
+    &__contact-icon,
+    &__favorites-icon{
         position: relative;
         &:before{
             position: absolute;
+            font-family: "ntsame";
+            font-size: 18px;
             left: 50%;
             top: 50%;
             transform: translate(-50%, -50%);
-            content: "";
+        }
+    }
+
+
+    
+    &__chat-icon{
+        background-color: rgba(64, 69, 186, 0.2);
+        &:before{
+            content: "\e906";
+            color: #4045BA;
         }
     }
     &__message-icon{
         background-color: rgba(206, 73, 208, 0.2);
-        position: relative;
         &:before{
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-            content: "";
+            content: "\e917";
+            color: #CE49D0;
         }
     }
     &__video-icon{
         background-color: rgba(237, 110, 127, 0.2);
-        position: relative;
         &:before{
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-            content: "";
+            content: "\e92c";
+            color: #ED6E7F;
         }
     }
     &__present-icon{
         background-color: rgba(226, 194, 145, 0.2);
-        position: relative;
         &:before{
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-            content: "";
+            content: "\e91c";
+            color: #E2C291;
         }
     }
     &__interest-icon{
         background-color: rgba(239, 64, 64, 0.2);
-        position: relative;
         &:before{
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-            content: "";
+            content: "\e912";
+            color: #EF4040;
         }
     }
     &__contact-icon{
         background-color: rgba(145, 176, 226, 0.2);
-        position: relative;
         &:before{
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-            content: "";
+            content: "\e90a";
+            color: #91B0E2;
         }
     }
     &__favorites-icon{
         background-color: rgba(225, 219, 75, 0.2);
-        position: relative;
         &:before{
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-            content: "";
+            content: "\e910";
+            color: #E1DB4B;
         }
     }
     &__right{
-        width: 100%;
-        margin-left: 24px;
-        // box{
-        //     display: flex;
-        //     justify-conte
-        // }
-
+        // width: 100%;
+        width: 70%;
+        // margin-left: 24px;
+        padding-left: 24px;
+        @media (max-width: 767px){
+            width: 100%;
+            padding-left: 0px;
+            margin-top: 20px;
+        }
     }
     &__info{
         background-color: #40BAB3;
@@ -162,6 +210,9 @@
         font-weight: 600;
         position: relative;
         margin-bottom: 24px;
+        @media (max-width: 990px){
+            max-width: 1000px;
+        }
         &-button{
             position: absolute;
             right: 16px;
@@ -208,13 +259,26 @@
     }
     &__item{
         display: flex;
-        // width: 100%;
+        @media (max-width: 640px){
+            flex-direction: column;
+        }
+       
 
         &-left{
             width: 40%;
+            padding-right: 15px;
+            @media (max-width: 640px){
+                width: 100%;
+                padding-right: 0px;
+            }
         }
         &-right{
             width: 60%;
+            padding-right: 15px;
+            @media (max-width: 640px){
+                width: 100%;
+                padding-right: 0px;
+            }
         }
         &-name{
             font-size: 12px;
@@ -226,6 +290,98 @@
                 font-weight: 600;
                 padding-left: 12px;
             }
+        }
+    }
+    &__box{
+        margin-top: 40px;
+        position: relative;
+        &-title{
+            font-size: 24px;
+            line-height: 29px;
+            font-weight: 600;
+            span{
+                margin-left: 10px;
+            }
+        }
+    }
+    &__slider{
+        margin-top: 24px;
+        position: relative;
+        &-image{
+            margin-right: 19px;
+        }
+        img{
+            width: 216px;
+        }
+        .slick-prev,
+        .slick-next{
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: none;
+            outline: none;
+            border: none;
+            cursor: pointer;
+        }
+        .slick-prev{
+            top: -50px;
+            right: 75px;
+            @media (max-width: 990px){
+                top: 280px;
+            }
+            &:before{
+                position: absolute;
+                content: "\e903";
+                font-family: 'ntsame';
+                left: 0px;
+                top: 0px;
+                color: #352F55;
+            }
+        }
+        .slick-next{
+            position: absolute;
+            top: -50px;
+            right: 20px;
+            @media (max-width: 990px){
+                top: 280px;
+            }
+            &:before{
+                position: absolute;
+                content: "\e903";
+                font-family: 'ntsame';
+                transform: rotate(180deg);
+                left: 2px;
+                top: 0px;
+                color: #352F55;
+            }
+        }  
+    }
+    &__overlay{
+        width: 62px;
+        height: 255px;
+        background: linear-gradient(270deg, #F2F6FA 0%, rgba(242, 246, 250, 0.9375) 39.06%, rgba(242, 246, 250, 0) 100%);
+        position: absolute;
+        top: 52px;
+        right: -1px;
+        @media (max-width: 990px){
+            display: none;
+        }
+    }
+
+
+    &__about{
+        max-width: 1100px;
+        width: 100%;
+        margin-top: 55px;
+        &-title{
+            font-size: 24px;
+            line-height: 29px;
+            padding-bottom: 15px;
+        }
+        &-text{
+            font-size: 14px;
+            line-height: 16px;
+            padding-bottom: 30px;
         }
     }
 }

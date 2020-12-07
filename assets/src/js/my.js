@@ -40,46 +40,15 @@ jQuery(document).ready(function () {
     }
 
     function initSlider(){
-      $('.slick-slider').slick({
-        // dots: true,
-        // infinite: true,
-        // speed: 1000,
-        // slidesToShow: 1,
-        // centerMode: true,
-        // centerPadding: "120px",
-        // variableWidth: false,
-        // autoplay: true,
-        // fade: true,
-    })
+      $('.profile__slider').slick({
+        prevArrow: '<button type="button" class="slick-prev"></button>',
+        nextArrow: '<button type="button" class="slick-next"></button>',
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        variableWidth: true,
+        // Padding: "120px",
+      })
+      
   }
 
-    // function initSlider(){
-    //   new Swiper(".swiper-container")
-    // }
-    //   var mySwiper = new Swiper('.swiper-container', {
-    //     // Optional parameters
-    //     direction: 'vertical',
-    //     loop: true,
-      
-    //     // If we need pagination
-    //     pagination: {
-    //       el: '.swiper-pagination',
-    //     },
-      
-    //     // Navigation arrows
-    //     navigation: {
-    //       nextEl: '.swiper-button-next',
-    //       prevEl: '.swiper-button-prev',
-    //     },
-      
-    //     // And if we need scrollbar
-    //     scrollbar: {
-    //       el: '.swiper-scrollbar',
-    //     },
-    //   })
-    // }
-
-
-
-    
-// })

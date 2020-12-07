@@ -15,7 +15,19 @@ $drop-bg: #F9FBFD;
 $drop-border: #E4E9EE;
 
 
-
+$breakpoints: (
+    'small-mobile' : (max-width: 380px),
+    'mobile' : (max-width: 480px),
+    'middle-mobile' :(max-width: 540px),
+    'large-mobile': (max-width: 640px),
+    'xs' : (max-width: 767px),
+    'small' : (max-width: 991px),
+    'tablet' : (max-width: 1199px),
+    'large-tablet': (max-width: 1280px),
+    'laptop' : (max-width: 1366px),
+    'large-laptop' : (max-width: 1440px),
+    'xl-laptop' : (max-width: 1620px)
+) !default;
 
 
 

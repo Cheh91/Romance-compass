@@ -1,0 +1,157 @@
+.gallery{
+    &__wrapper{
+        margin: 0px -12px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__item{
+        width: 33.3%;
+        padding: 0 12px;
+        margin-bottom: 24px;
+        @media (max-width: 1150px){
+            width: 50%;
+        }
+        @media (max-width: 750px){
+            width: 100%;
+        }
+        &-inner{
+            // background-color: $light-gray;
+            background-color: $turquoise;
+            border-radius: 10px;
+            padding: 8px;
+            display: flex;
+            position: relative;
+            overflow: hidden;
+            @media (max-width: 750px){
+                max-width: 400px;
+                margin: 0 auto;
+            }
+            &-status{
+                position: absolute;
+                right: -25px;
+                top: -50px;
+                width: 112px;
+                height: 112px;
+                border-radius: 50%;
+                background-color: #24E405;
+                span{
+                    position: absolute;
+                    bottom: 25px;
+                    left: 24px;
+                    font-size: 16px;
+                    line-height: 19px;
+                    font-weight: 600;
+                    color: #F2F6FA;  
+                }
+                &.offline{
+                    background-color: #C8CFD6;
+                }
+            }
+        }
+        img{
+            width: 192px;
+            @media (max-width: 750px){
+               width: 180px;
+            }
+        }
+        &-info{
+            padding-left: 24px;
+            padding-top: 40px;
+            @media (max-width: 750px){
+                padding-top: 0px;
+            }
+        }
+        &-name{
+            font-size: 18px;
+            line-height: 21px;
+            font-weight: 600;
+            color: $blue-magenta;
+            margin-bottom: 13px;
+            
+        }
+        &-age{
+            font-size: 14px;
+            line-height: 16px;
+            font-weight: 400;
+            margin-top: 13px;
+            span{
+                font-weight: 600;
+                line-height: 17px;
+            }
+        }
+        &-block{
+            margin-top: 15px;
+            li{
+                margin-bottom: 12px;
+                a{
+                    display: flex;
+                    align-items: center;
+                    span{
+                        width: 32px;
+                        height: 32px;
+                        border-radius: 5px;
+                        
+                        &.chat-icon{
+                            background-color: rgba(64, 69, 186, 0.2);
+                            position: relative;
+                            &:before{
+                                position: absolute;
+                                content: "\e906";
+                                font-family: 'ntsame';
+                                font-size: 18px;
+                                color: #4045BA;
+                                left: 50%;
+                                top: 50%;
+                                transform: translate(-50%, -50%);
+                            }
+                        }
+                        &.message-icon{
+                            background-color: rgba(206, 73, 208, 0.2);
+                            position: relative;
+                            &:before{
+                                position: absolute;
+                                content: "\e917";
+                                font-family: 'ntsame';
+                                font-size: 18px;
+                                color: #CE49D0;
+                                left: 50%;
+                                top: 50%;
+                                transform: translate(-50%, -50%);
+                            }
+
+                        }
+                        &.clips-icon{
+                            background-color: rgba(237, 110, 127, 0.2);
+                            position: relative;
+                            &:before{
+                                position: absolute;
+                                content: "\e92c";
+                                font-family: 'ntsame';
+                                font-size: 18px;
+                                color: #ED6E7F;
+                                left: 50%;
+                                top: 50%;
+                                transform: translate(-50%, -50%);
+                            }
+                        }
+                    }
+                    p{
+                        font-size: 12px;
+                        line-height: 14px;
+                        padding-left: 12px;
+                        color: $blue-magenta;
+                    }
+                }  
+            }
+            li:last-child{
+                margin-bottom: 0;
+            }
+        }
+        &-id{
+            font-size: 14px;
+            line-height: 17px;
+            font-weight: 500;
+            margin-top: 22px;
+        }
+    }
+}

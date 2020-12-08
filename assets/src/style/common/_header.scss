@@ -77,27 +77,22 @@
         }
        
         @media (max-width: 900px){
-            display: none;
+            // display: none;
             position: absolute;
             background-color: grey;
-            left: 0;
+            left: -100%;
             top: 80px;
             width: 100%;
             min-height: 420px;
             overflow-y: scroll;
-            // height: 100vh;
-            // min-height: 460px;
+            transition: all .5s;
+            height: 100vh;
         }
-        &-btn-close{
-            display: none;
-            width: 20px;
-            height: 20px;
-            background-color: red;
+        &.open{
             @media (max-width: 900px){
-                display: block;
+                left: 0;
             }
-        }
-        
+        }       
         &-item{
             display: flex;
             font-weight: 600;

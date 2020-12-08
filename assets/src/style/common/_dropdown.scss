@@ -1,0 +1,65 @@
+.drop{
+    margin-left: 15px;
+    &-box{
+        position: relative;
+        a{
+            color: $blue-magenta;
+            font-size: 14px;
+            line-height: 36px;
+        }
+    }
+    &-btn{
+        background: #F9FBFD;
+        border: 1px solid #E4E9EE;
+        display: block;
+        border-radius: 10px;
+        padding: 5px 40px 5px 12px;
+        &:after{
+            position: absolute;
+            position: absolute;
+            font-family: 'ntsame';
+            content: "\e901";
+            right: 18px;
+            top: 50%;
+            transform: translate(0, -50%);
+            font-size: 16px;
+        }
+        &-1{
+            min-width: 156px;
+            width: 100%;
+        }
+        &-2{
+            min-width: 104px;
+            width: 100%;
+        }
+        &-3{
+            min-width: 219px;
+            width: 100%;
+        }
+        &-4{
+            min-width: 216px;
+            width: 100%;
+        }
+    }
+    &-menu{
+        margin-top: 20px;
+        position: absolute;
+        border: 1px solid #E4E9EE;
+        display: block;
+        left: 0;
+        right: 0;
+        border-radius: 10px;
+        background: #F9FBFD;
+        border: 1px solid #E4E9EE;
+        z-index: 10;
+        padding: 8px 12px;
+        opacity: 0;
+        a{
+            line-height: 28px;
+        }
+
+    }
+    &-menu.active{
+        opacity: 1;
+    }
+}

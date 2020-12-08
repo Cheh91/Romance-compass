@@ -8,9 +8,28 @@
     border-radius: 20px;
     color: $blue-magenta;
     position: relative;
+    overflow: hidden;
     @media (max-width: 990px){
         padding-left: 0px;
         background-color: transparent;
+    }
+    &__status{
+        position: absolute;
+        right: -25px;
+        top: -62px;
+        width: 124px;
+        height: 124px;
+        border-radius: 50%;
+        background-color: #24E405;
+        span{
+            position: absolute;
+            bottom: 15px;
+            left: 30px;
+            font-size: 18px;
+            line-height: 19px;
+            font-weight: 600;
+            color: #F2F6FA;  
+        }
     }
     &-id{
         position: absolute;

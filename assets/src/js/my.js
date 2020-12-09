@@ -5,6 +5,7 @@ jQuery(document).ready(function () {
     initDropdown();
     openHeaderMenu();
     initSlider();
+    searchRange();
 
 });
 
@@ -29,7 +30,7 @@ function openHeaderMenu() {
   })
 }
 
-    function initSlider(){
+function initSlider(){
       $('.profile__slider').slick({
         prevArrow: '<button type="button" class="slick-prev"></button>',
         nextArrow: '<button type="button" class="slick-next"></button>',
@@ -39,5 +40,18 @@ function openHeaderMenu() {
         variableWidth: true,
       })
       
-  }
+}
+
+function searchRange(){
+  $(".search__range").ionRangeSlider({
+    type: "double",
+    min: 0,
+    max: 1000,
+    from: 200,
+    to: 500,
+    grid: true
+  })
+}
+
+
 

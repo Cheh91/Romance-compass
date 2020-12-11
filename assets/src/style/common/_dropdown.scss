@@ -20,9 +20,10 @@
             font-family: 'ntsame';
             content: "\e901";
             right: 18px;
-            top: 50%;
+            top: 47%;
             transform: translate(0, -50%);
             font-size: 16px;
+            transition: all 0.5s;
         }
         &-1{
             min-width: 156px;
@@ -40,6 +41,65 @@
             min-width: 216px;
             width: 100%;
         }
+        &-basic-1{
+            min-width: 108px;
+            width: 100%;
+        }
+        &-basic-2{
+            min-width: 292px;
+            width: 100%;
+        }
+        &-more{
+            min-width: 308px;
+            width: 100%;
+        }
+    }
+    &-btn.active{
+        &:after{
+            transform: rotate(180deg);
+            top: 12%;
+            transition: all 0.5s;
+        }
+    }
+    &-basic-1{
+        margin-left: 8px;
+    }
+    &-basic-2{
+        margin-left: 14px;
+    }
+    &-basic-3{
+        margin-left: 0px;
+    }
+
+    &-basic-btn{
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.4);
+    }
+    &-basic-box{
+        a{
+            color: $white;
+            line-height: 28px;
+        }
+    }
+    &-more-box{
+        a{
+            color: #bdbdbd;
+            line-height: 28px;
+        }
+    }
+    &-more-btn{
+        background: #F5F5F5;
+        &:after{
+            position: absolute;
+            position: absolute;
+            font-family: 'ntsame';
+            content: "\e901";
+            right: 18px;
+            top: 50%;
+            transform: translate(0, -50%);
+            font-size: 16px;
+            color: #777;
+        }
     }
     &-menu{
         margin-top: 20px;
@@ -53,13 +113,24 @@
         border: 1px solid #E4E9EE;
         z-index: 10;
         padding: 8px 12px;
-        opacity: 0;
+        // opacity: 0;
+        display: none;
         a{
             line-height: 28px;
         }
 
     }
+    &-basic-menu{
+        a{
+            color: $black;
+        }
+    }
+    &-more-menu{
+        a{
+            color: #bdbdbd;
+        }
+    }
     &-menu.active{
-        opacity: 1;
+        display: block;
     }
 }

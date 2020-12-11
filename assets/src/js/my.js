@@ -13,15 +13,9 @@ jQuery(document).ready(function () {
       $(".drop-box").click(function (e) {
         e.preventDefault();
         $(this).find(".drop-menu").toggleClass("active");
+        $(this).find(".drop-btn").toggleClass("active");
       })
     }
-
-    // function openHeaderMenu(){
-    //   $(".header__btn-open").click(function(){
-    //     $(".header__btn-open span").toggleClass("active")
-    //     $(".header__nav").toggle(500);
-    //   })
-    // }
 
 function openHeaderMenu() {
   $(".header__btn-open").click(function () {

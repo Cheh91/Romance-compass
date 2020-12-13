@@ -6,6 +6,7 @@ jQuery(document).ready(function () {
     openHeaderMenu();
     initSlider();
     searchRange();
+    girlsOnline();
 
 });
 
@@ -44,6 +45,15 @@ function searchRange(){
     from: 200,
     to: 500,
     grid: true
+  })
+}
+
+function girlsOnline(){
+  $(".videochat__online-wrap").slick({
+    prevArrow: '<button type="button" class="slick-prev"></button>',
+    nextArrow: '<button type="button" class="slick-next"></button>',
+    slidesToShow: 4,
+    rows: 2
   })
 }
 

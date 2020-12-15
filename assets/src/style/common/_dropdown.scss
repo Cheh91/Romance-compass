@@ -18,7 +18,7 @@
             position: absolute;
             position: absolute;
             font-family: 'ntsame';
-            content: "\e901";
+            content: "\e8fe";
             right: 18px;
             top: 47%;
             transform: translate(0, -50%);
@@ -48,6 +48,9 @@
         &-basic-2{
             min-width: 292px;
             width: 100%;
+            @media (max-width: 700px){
+                display: block;
+            }
         }
         &-more{
             min-width: 308px;

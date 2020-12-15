@@ -53,7 +53,29 @@ function girlsOnline(){
     prevArrow: '<button type="button" class="slick-prev"></button>',
     nextArrow: '<button type="button" class="slick-next"></button>',
     slidesToShow: 4,
-    rows: 2
+    rows: 2,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 3,
+        }
+      },
+      {
+        breakpoint: 1000,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 890,
+        settings: {
+          slidesToShow: 10,
+          rows: 1,
+          variableWidth: true,
+        }
+      }
+    ]
   })
 }
 

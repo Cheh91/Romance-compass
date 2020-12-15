@@ -4,6 +4,9 @@
         max-width: 720px;
         width: 100%;
         padding: 0px 40px;
+        @media (max-width: 700px){
+            padding: 0px 20px;
+        }
     }
     &__top{
         display: flex;
@@ -152,7 +155,7 @@
             padding-left: 30px;
         }
         span:before{
-            content: "\e901";
+            content: "\e8fe";
             font-family: "ntsame";
             border: 1px solid rgba(255, 255, 255, 0.5);
             display: inline-block;
@@ -170,7 +173,7 @@
 
         input[type=checkbox]:checked + span:before{
             position: absolute;
-            content: "\e901";
+            content: "\e8fe";
             font-family: "ntsame";
             color: #fff;
         }
@@ -229,6 +232,9 @@
             @media (max-width: 700px){
                 width: 50%;
             }
+            &-second{
+                margin-left: 6px;
+            }
         }
         &-subtitle{
             font-size: 12px;
@@ -244,6 +250,9 @@
         justify-content: space-between;
         flex-wrap: wrap;
         margin: 24px -12px 0px;
+        @media (max-width: 700px){
+            flex-direction: column;
+        }
         &-name{
             font-size: 14px;
             line-height: 16px;
@@ -259,6 +268,9 @@
             padding: 0 12px;
             margin-bottom: 22px;
             &-check{
+                width: 100%;
+            }
+            @media (max-width: 700px){
                 width: 100%;
             }
         }
@@ -289,7 +301,7 @@
             padding-left: 30px;
         }
         span:before{
-            content: "\e901";
+            content: "\e8fe";
             font-family: "ntsame";
             border: 2px solid #E4E3E3;
             display: inline-block;
@@ -308,7 +320,7 @@
 
         input[type=checkbox]:checked + span:before{
             position: absolute;
-            content: "\e901";
+            content: "\e8fe";
             font-family: "ntsame";
             color: black;
         }

@@ -16,21 +16,15 @@
         min-width: 292px;
         width: 100%;
         margin-left: 0px;
+        @media (max-width: 480px){
+            min-width: 200px;
+        }
     }
     &-basic-2{
         min-width: 108px;
         width: 100%;
-    }
-    &-more{
-        min-width: 308px;
-        width: 100%;
-    }
-    &-box{
-        position: relative;
-        a{
-            color: $blue-magenta;
-            font-size: 14px;
-            line-height: 36px;
+        @media (max-width: 480px){
+            min-width: 70px;
         }
     }
     &-btn{
@@ -50,34 +44,25 @@
             font-size: 16px;
             transition: all 0.5s;
         }
-        // &-1{
-        //     min-width: 156px;
-        //     width: 100%;
-        // }
-        // &-2{
-        //     min-width: 104px;
-        //     width: 100%;
-        // }
-        // &-3{
-        //     min-width: 219px;
-        //     width: 100%;
-        // }
-        // &-4{
-        //     min-width: 216px;
-        //     width: 100%;
-        // }
-        // &-basic-1{
-        //     min-width: 108px;
-        //     width: 100%;
-        // }
-        // &-basic-2{
-        //     min-width: 292px;
-        //     width: 100%;
-        // }
-        // &-more{
-        //     min-width: 308px;
-        //     width: 100%;
-        // }
+    }
+    &-btn-basic{
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.4);
+        
+    }
+    &-box{
+        position: relative;
+        a{
+            color: $blue-magenta;
+            font-size: 14px;
+            line-height: 36px;
+        }
+    }
+    &-box-basic{
+        a{
+            color: $white;
+            line-height: 28px;
+        }
     }
     &-btn.active{
         &:after{
@@ -86,39 +71,26 @@
             transition: all 0.5s;
         }
     }
-    // &-basic-1{
-    //     margin-left: 8px;
-    // }
-    // &-basic-2{
-    //     margin-left: 14px;
-    // }
-    // &-basic-3{
-    //     margin-left: 0px;
-    // }
-
-    &-basic-btn{
-        background: rgba(255, 255, 255, 0.1);
-        border: 1px solid rgba(255, 255, 255, 0.4);
-    }
-    &-basic-box{
-        a{
-            color: $white;
-            line-height: 28px;
+    &-more{
+        min-width: 308px;
+        width: 100%;
+        margin-left: 0px;
+        @media (max-width: 480px){
+            min-width: 200px;
         }
     }
-    &-more-box{
+    &-box-more{
         a{
             color: #bdbdbd;
             line-height: 28px;
         }
     }
-    &-more-btn{
+    &-btn-more{
         background: #F5F5F5;
         &:after{
             position: absolute;
-            position: absolute;
             font-family: 'ntsame';
-            content: "\e901";
+            content: "\e8fe";
             right: 18px;
             top: 50%;
             transform: translate(0, -50%);
@@ -143,14 +115,13 @@
         a{
             line-height: 28px;
         }
-
     }
-    &-basic-menu{
+    &-menu-basic{
         a{
             color: $black;
         }
     }
-    &-more-menu{
+    &-menu-more{
         a{
             color: #bdbdbd;
         }

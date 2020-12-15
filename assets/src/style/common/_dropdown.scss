@@ -1,5 +1,30 @@
 .drop{
     margin-left: 15px;
+    &-1{
+        width: 156px;
+    }
+    &-2{
+        width: 104px;
+    }
+    &-3{
+        width: 219px;
+    }
+    &-4{
+        width: 216px;
+    }
+    &-basic-1{
+        min-width: 292px;
+        width: 100%;
+        margin-left: 0px;
+    }
+    &-basic-2{
+        min-width: 108px;
+        width: 100%;
+    }
+    &-more{
+        min-width: 308px;
+        width: 100%;
+    }
     &-box{
         position: relative;
         a{
@@ -25,37 +50,34 @@
             font-size: 16px;
             transition: all 0.5s;
         }
-        &-1{
-            min-width: 156px;
-            width: 100%;
-        }
-        &-2{
-            min-width: 104px;
-            width: 100%;
-        }
-        &-3{
-            min-width: 219px;
-            width: 100%;
-        }
-        &-4{
-            min-width: 216px;
-            width: 100%;
-        }
-        &-basic-1{
-            min-width: 108px;
-            width: 100%;
-        }
-        &-basic-2{
-            min-width: 292px;
-            width: 100%;
-            @media (max-width: 700px){
-                display: block;
-            }
-        }
-        &-more{
-            min-width: 308px;
-            width: 100%;
-        }
+        // &-1{
+        //     min-width: 156px;
+        //     width: 100%;
+        // }
+        // &-2{
+        //     min-width: 104px;
+        //     width: 100%;
+        // }
+        // &-3{
+        //     min-width: 219px;
+        //     width: 100%;
+        // }
+        // &-4{
+        //     min-width: 216px;
+        //     width: 100%;
+        // }
+        // &-basic-1{
+        //     min-width: 108px;
+        //     width: 100%;
+        // }
+        // &-basic-2{
+        //     min-width: 292px;
+        //     width: 100%;
+        // }
+        // &-more{
+        //     min-width: 308px;
+        //     width: 100%;
+        // }
     }
     &-btn.active{
         &:after{
@@ -64,15 +86,15 @@
             transition: all 0.5s;
         }
     }
-    &-basic-1{
-        margin-left: 8px;
-    }
-    &-basic-2{
-        margin-left: 14px;
-    }
-    &-basic-3{
-        margin-left: 0px;
-    }
+    // &-basic-1{
+    //     margin-left: 8px;
+    // }
+    // &-basic-2{
+    //     margin-left: 14px;
+    // }
+    // &-basic-3{
+    //     margin-left: 0px;
+    // }
 
     &-basic-btn{
         background: rgba(255, 255, 255, 0.1);

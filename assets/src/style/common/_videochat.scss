@@ -161,11 +161,11 @@
             width: 100%;
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
-            &-top{
-                display: flex;
-                align-items: center;
-            }  
+            justify-content: space-between; 
+        }
+        &-top{
+            display: flex;
+            align-items: center;
         }
         &-name{
             font-size: 18px;
@@ -386,47 +386,48 @@
             margin-right: 8px;
             padding-top: 10px; 
             padding-bottom: 5px;
-            &-image{
-                width: 72px;
-                height: 72px;
-                background-size: cover;
-                background-repeat: no-repeat;
-                border-radius: 6px;
-                position: relative;
-                &:before{
-                    position: absolute;
-                    width: 12px;
-                    height: 12px;
-                    border: 2px solid #e5e5e5;
-                    border-radius: 50%;
-                    background-color: #40BAB3;
-                    right: -8px;
-                    top: -8px;
-                    content: "";
-                }
+            
+        }
+        &-image{
+            width: 72px;
+            height: 72px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-radius: 6px;
+            position: relative;
+            &:before{
+                position: absolute;
+                width: 12px;
+                height: 12px;
+                border: 2px solid #e5e5e5;
+                border-radius: 50%;
+                background-color: #40BAB3;
+                right: -8px;
+                top: -8px;
+                content: "";
             }
-            &-name{
-                font-size: 10px;
-                line-height: 12px;
-                text-align: center;
-                margin-top: 5px;
-            }
-            &-star{
-                width: 15px;
-                height: 15px;
-                position: relative;
-                display: block;
-                margin: 0 auto;
-                margin-top: 5px;
-                &:before{
-                    position: absolute;
-                    content: "\e901";
-                    font-family: "ntsame";
-                    left: 50%;
-                    top: 50%;
-                    transform: translate(-50%, -50%);
-                    color: #FFA532;
-                }
+        }
+        &-name{
+            font-size: 10px;
+            line-height: 12px;
+            text-align: center;
+            margin-top: 5px;
+        }
+        &-star{
+            width: 15px;
+            height: 15px;
+            position: relative;
+            display: block;
+            margin: 0 auto;
+            margin-top: 5px;
+            &:before{
+                position: absolute;
+                content: "\e901";
+                font-family: "ntsame";
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                color: #FFA532;
             }
         }
     }
@@ -446,9 +447,6 @@
         }
     }
     &__list{
-        
-        
-        
         &-profile{
             width: 100%;
             height: 248px;
@@ -460,34 +458,34 @@
             align-items: center;
             padding-top: 4px;
             padding-left: 7px;
-            &-image{
-                width: 32px;
-                height: 32px;
-                border-radius: 50%;
-                background-size: cover;
-                margin-right: 8px;
+        }
+        &-image{
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background-size: cover;
+            margin-right: 8px;
+        }
+        &-icon{
+            width: 20px;
+            height: 20px;
+            position: relative;
+            margin-right: 8px;
+            &:before{
+                position: absolute;
+                content: "\e910";
+                left: 0;
+                top: -2px;
+                color: #FFA532;
+                font-family: 'ntsame';
+                font-size: 20px;
             }
-            &-icon{
-                width: 20px;
-                height: 20px;
-                position: relative;
-                margin-right: 8px;
-                &:before{
-                    position: absolute;
-                    content: "\e910";
-                    left: 0;
-                    top: -2px;
-                    color: #FFA532;
-                    font-family: 'ntsame';
-                    font-size: 20px;
-                }
-            }
-            &-name{
-                font-size: 14px;
-                line-height: 17px;
-                font-weight: 600;
-                color: $white;
-            }
+        }
+        &-name{
+            font-size: 14px;
+            line-height: 17px;
+            font-weight: 600;
+            color: $white;
         }
         &-chat::-webkit-scrollbar {
             width: 0px;
@@ -710,43 +708,43 @@
             border-radius: 9px 9px 0px 0px;
             padding-left: 15px;
             padding-right: 15px;
-            &-star{
-                width: 20px;
-                height: 20px;
-                position: relative;
-                &:before{
-                    position: absolute;
-                    left: 50%;
-                    top: 50%;
-                    transform: translate(-50%, -50%);
-                    content: "\e910";
-                    font-family: "ntsame";
-                    color: #FFA532;
-                    font-size: 19px;
-                }
+        }
+        &-star{
+            width: 20px;
+            height: 20px;
+            position: relative;
+            &:before{
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                content: "\e910";
+                font-family: "ntsame";
+                color: #FFA532;
+                font-size: 19px;
             }
-            &-search{
-                display: inline-block;
-                width: 20px;
-                height: 20px;
-                position: relative;
-                &:before{
-                    position: absolute;
-                    left: 50%;
-                    top: 50%;
-                    transform: translate(-50%, -50%);
-                    content: "\e92f";
-                    font-family: 'ntsame';
-                    color: #4045BA;
-                    font-family: 18px;
-                }
+        }
+        &-search{
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            position: relative;
+            &:before{
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                content: "\e92f";
+                font-family: 'ntsame';
+                color: #4045BA;
+                font-family: 18px;
             }
-            &-title{
-                font-size: 14px;
-                line-height: 17px;
-                font-weight: 600;
-                color: #352F55;
-            }
+        }
+        &-title{
+            font-size: 14px;
+            line-height: 17px;
+            font-weight: 600;
+            color: #352F55;
         }
         &-box{
             height: 48px;
@@ -761,87 +759,87 @@
                     width: 0px;
                 }
             }
-            &-image{
-                width: 32px;
-                height: 32px;
-                border-radius: 6px;
-                background-size: cover;
-                margin-left: 15px;
-                position: relative;
-                &:before{
-                    position: absolute;
-                    width: 8px;
-                    height: 8px;
-                    border-radius: 50%;
-                    background-color: #40BAB3;
-                    border: 2px solid #F2F6FA;
-                    right: -4px;
-                    bottom: -4px;
-                    content: "";
-                }
-            }
-            &-star{
-                width: 20px;
-                height: 20px;
-                margin-left: 10px;
-                position: relative;
-                &:before{
-                    position: absolute;
-                    content: "\e910";
-                    font-family: 'ntsame';
-                    left: 50%;
-                    top: 50%;
-                    transform: translate(-50%, -50%);
-                    font-size: 19px;
-                    color: #FFA532;
-                }
-            }
-            &-name{
-                font-size: 12px;
-                line-height: 16px;
-                font-weight: 600;
-                margin-left: 10px;
-            }
-            &-message{
-                width: 16px;
-                height: 17px;
-                position: relative;
-                margin-left: 10px;
-                cursor: pointer;
-                &:before{
-                    position: absolute;
-                    content: "\e917";
-                    font-family: "ntsame";
-                    color: #CE49D0;
-                    font-size: 16px;
-                }
-            }
-            &-btnchat{
-                display: inline-block;
-                background-color: #40BAB3;
-                border-radius: 5px;
-                text-align: center;
-                padding: 4px;
-                margin-left: 10px;
-                cursor: pointer;
-            }
-            &-arrow{
-                width: 10px;
-                height: 14px;
-                display: inline-block;
+        }
+        &-image{
+            width: 32px;
+            height: 32px;
+            border-radius: 6px;
+            background-size: cover;
+            margin-left: 15px;
+            position: relative;
+            &:before{
                 position: absolute;
-                right: 20px;
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                background-color: #40BAB3;
+                border: 2px solid #F2F6FA;
+                right: -4px;
+                bottom: -4px;
+                content: "";
+            }
+        }
+        &-star{
+            width: 20px;
+            height: 20px;
+            margin-left: 10px;
+            position: relative;
+            &:before{
+                position: absolute;
+                content: "\e910";
+                font-family: 'ntsame';
+                left: 50%;
                 top: 50%;
-                transform: translateY(-50%);
-                &:before{
-                    content: "\e902";
-                    left: 50%;
-                    top: 50%;
-                    transform: translate(-50%, -50%);
-                    font-family: "ntsame";
-                    position: absolute;
-                    color: #C8CFD6;
-                }
+                transform: translate(-50%, -50%);
+                font-size: 19px;
+                color: #FFA532;
+            }
+        }
+        &-name{
+            font-size: 12px;
+            line-height: 16px;
+            font-weight: 600;
+            margin-left: 10px;
+        }
+        &-message{
+            width: 16px;
+            height: 17px;
+            position: relative;
+            margin-left: 10px;
+            cursor: pointer;
+            &:before{
+                position: absolute;
+                content: "\e917";
+                font-family: "ntsame";
+                color: #CE49D0;
+                font-size: 16px;
+            }
+        }
+        &-btnchat{
+            display: inline-block;
+            background-color: #40BAB3;
+            border-radius: 5px;
+            text-align: center;
+            padding: 4px;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+        &-arrow{
+            width: 10px;
+            height: 14px;
+            display: inline-block;
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            &:before{
+                content: "\e902";
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                font-family: "ntsame";
+                position: absolute;
+                color: #C8CFD6;
             }
         }
     }

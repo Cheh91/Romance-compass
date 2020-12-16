@@ -12,6 +12,7 @@
     @media (max-width: 990px){
         padding-left: 0px;
         background-color: transparent;
+        margin-top: 0px;
     }
     &__status{
         position: absolute;
@@ -21,6 +22,9 @@
         height: 124px;
         border-radius: 50%;
         background-color: #24E405;
+        @media (max-width: 767px){
+            display: none;
+        }
         span{
             position: absolute;
             bottom: 15px;
@@ -79,8 +83,6 @@
         }
     }
     &__left{
-        // max-width: 364px;
-        // width: 100%;
         width: 30%;
         @media (max-width: 767px){
             max-width: 364px;

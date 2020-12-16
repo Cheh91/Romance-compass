@@ -31,7 +31,7 @@
 				<ul class="header__nav-item">
 					<li><a href="#">Home</a></li>
 					<li><a href="#">Ladies gallery</a></li>
-					<li><a href="#">Search</a></li>
+					<li><a href="#" class="search-btn">Search</a></li>
 					<li><a href="#">Support</a></li>
 					<li><a href="#">Log In</a></li>
 				</ul>
@@ -307,6 +307,431 @@
 <script src="js/slick.js"></script>
 <script src="js/ion.rangeSlider.js"></script>
 <script src="../js/my.js"></script>
+<section class="search">
+    <div class="search__block">
+        <div class="search__top">
+            <h2 class="search__top-title">Search</h2>
+            <a href="#" class="search__top-btn"></a>
+        </div>
+        <div class="search__find">
+            <p class="search__find-text">You can find a user by personal ID</p>
+            <form class="search__find-form">
+                <input class="search__find-form-text" type="text" placeholder="id">
+                <input class="search__find-form-button" type="button" value="Show matches by ID">
+            </form>
+        </div>
+        <div class="search__request">
+            <h3 class="search__request-title">
+                Specify your request by filling search form
+            </h3>
+            <div class="search__request-block">
+                <div class="search__request-wrap">
+                    <label class="search__request-item" style="background-color: #40BAB3">
+                        <input class="search__request-item-checkbox" type="checkbox">
+                        <span class="search__request-item-title">Asian dating</span>
+                    </label>
+                </div>
+                <div class="search__request-wrap">
+                    <label class="search__request-item" style="background-color: #FFA532">
+                        <input class="search__request-item-checkbox" type="checkbox">
+                        <span class="search__request-item-title">Christian</span>
+                    </label>
+                </div>
+                <div class="search__request-wrap">
+                    <label class="search__request-item" style="background-color: #CE49D0">
+                        <input class="search__request-item-checkbox" type="checkbox">
+                        <span class="search__request-item-title">Chatting</span>
+                    </label>
+                </div>
+                <div class="search__request-wrap">
+                    <label class="search__request-item" style="background-color: #7298D7">
+                        <input class="search__request-item-checkbox" type="checkbox">
+                        <span class="search__request-item-title">Catholic</span>
+                    </label>
+                </div>
+                <div class="search__request-wrap">
+                    <label class="search__request-item" style="background-color: #ED6E7F">
+                        <input class="search__request-item-checkbox" type="checkbox">
+                        <span class="search__request-item-title">Travel girls</span>
+                    </label>
+                </div>
+                <div class="search__request-wrap">
+                    <label class="search__request-item" style="background-color: #5F34BB">
+                        <input class="search__request-item-checkbox" type="checkbox">
+                        <span class="search__request-item-title">Muslim</span>
+                    </label>
+                </div>
+                <div class="search__request-wrap">
+                    <label class="search__request-item" style="background-color: #4045BA">
+                        <input class="search__request-item-checkbox" type="checkbox">
+                        <span class="search__request-item-title">Senior dating</span>
+                    </label>
+                </div>
+                <div class="search__request-wrap">
+                    <label class="search__request-item" style="background-color: #7AD16B">
+                        <input class="search__request-item-checkbox" type="checkbox">
+                        <span class="search__request-item-title">Interracial</span>
+                    </label>
+                </div>
+
+            </div>
+        </div>
+        <div class="search__basic">
+            <h3 class="search__basic-title">
+                Basic
+            </h3>
+
+            <div class="search__basic-wrapper">
+                <div class="search__basic-col">
+                    <div class="search__basic-name">
+                        Age
+                    </div>
+                    <input type="text" class="js-range-slider" name="my_range" value="" data-type="double" data-min="18" data-max="35"
+                        data-from="18" data-to="25" data-grid="true" />
+                </div>
+
+                <div class="search__basic-col">
+                    <div class="search__basic-name">
+                        Ethnicity
+                    </div>
+                    <ul class="drop drop-basic-1">
+                        <li class="drop-box drop-box-basic">
+                            <a href="#" class="drop-btn drop-btn-basic">
+                                <span>Eye color</span>
+                            </a>
+                            <ul class="drop-menu drop-menu-basic">
+                                <li><a href="#">Ethnicity1</a></li>
+                                <li><a href="#">Ethnicity2</a></li>
+                                <li><a href="#">Ethnicity3</a></li>
+                                <li><a href="#">Ethnicity4</a></li>
+                                <li><a href="#">Ethnicity5</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="search__basic-col">
+                    <div class="search__basic-name">
+                        Height
+                    </div>
+                    <div class="search__basic-subwrapper">
+                        <div class="search__basic-subcol">
+                            <div class="search__basic-subtitle">
+                                From
+                            </div>
+                            <ul class="drop drop-basic-2">
+                                <li class="drop-box drop-box-basic">
+                                    <a href="#" class="drop-btn drop-btn-basic">
+                                        <span>140</span>
+                                    </a>
+                                    <ul class="drop-menu drop-menu-basic">
+                                        <li><a href="#">140</a></li>
+                                        <li><a href="#">150</a></li>
+                                        <li><a href="#">160</a></li>
+                                        <li><a href="#">170</a></li>
+                                        <li><a href="#">180</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="search__basic-subcol search__basic-subcol-second">
+                            <div class="search__basic-subtitle">
+                                To
+                            </div>
+                            <ul class="drop drop-basic-2">
+                                <li class="drop-box drop-box-basic">
+                                    <a href="#" class="drop-btn drop-btn-basic">
+                                        <span>140</span>
+                                    </a>
+                                    <ul class="drop-menu drop-menu-basic">
+                                        <li><a href="#">140</a></li>
+                                        <li><a href="#">150</a></li>
+                                        <li><a href="#">160</a></li>
+                                        <li><a href="#">170</a></li>
+                                        <li><a href="#">180</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="search__basic-col">
+                    <div class="search__basic-name">
+                        Eye color
+                    </div>
+                    <ul class="drop drop-basic-1">
+                        <li class="drop-box drop-box-basic">
+                            <a href="#" class="drop-btn drop-btn-basic">
+                                <span>Eye color</span>
+                            </a>
+                            <ul class="drop-menu drop-menu-basic">
+                                <li><a href="#">Eye color1</a></li>
+                                <li><a href="#">Eye color2</a></li>
+                                <li><a href="#">Eye color3</a></li>
+                                <li><a href="#">Eye color4</a></li>
+                                <li><a href="#">Eye color5</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="search__basic-col">
+                    <div class="search__basic-name">
+                        Weight
+                    </div>
+                    <div class="search__basic-subwrapper">
+                        <div class="search__basic-subcol">
+                            <div class="search__basic-subtitle">
+                                From
+                            </div>
+                            <ul class="drop drop-basic-2">
+                                <li class="drop-box drop-box-basic">
+                                    <a href="#" class="drop-btn drop-btn-basic">
+                                        <span>40</span>
+                                    </a>
+                                    <ul class="drop-menu drop-menu-basic">
+                                        <li><a href="#">40</a></li>
+                                        <li><a href="#">45</a></li>
+                                        <li><a href="#">50</a></li>
+                                        <li><a href="#">55</a></li>
+                                        <li><a href="#">60</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="search__basic-subcol search__basic-subcol-second">
+                            <div class="search__basic-subtitle">
+                                To
+                            </div>
+                            <ul class="drop drop-basic-2">
+                                <li class="drop-box drop-box-basic">
+                                    <a href="#" class="drop-btn drop-btn-basic">
+                                        <span>40</span>
+                                    </a>
+                                    <ul class="drop-menu drop-menu-basic">
+                                        <li><a href="#">40</a></li>
+                                        <li><a href="#">45</a></li>
+                                        <li><a href="#">50</a></li>
+                                        <li><a href="#">55</a></li>
+                                        <li><a href="#">60</a></li>
+
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="search__basic-col">
+                    <div class="search__basic-name">
+                        Hair color
+                    </div>
+                    <ul class="drop drop-basic-1">
+                        <li class="drop-box drop-box-basic">
+                            <a href="#" class="drop-btn drop-btn-basic">
+                                <span>Eye color</span>
+                            </a>
+                            <ul class="drop-menu drop-menu-basic">
+                                <li><a href="#">Eye color1</a></li>
+                                <li><a href="#">Eye color2</a></li>
+                                <li><a href="#">Eye color3</a></li>
+                                <li><a href="#">Eye color4</a></li>
+                                <li><a href="#">Eye color5</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="search__basic-col">
+                    <div class="search__basic-name">
+                        Body type
+                    </div>
+                    <ul class="drop drop-basic-1">
+                        <li class="drop-box drop-box-basic">
+                            <a href="#" class="drop-btn drop-btn-basic">
+                                <span>type1</span>
+                            </a>
+                            <ul class="drop-menu drop-menu-basic">
+                                <li><a href="#">type1</a></li>
+                                <li><a href="#">type2</a></li>
+                                <li><a href="#">type3</a></li>
+                                <li><a href="#">type4</a></li>
+                                <li><a href="#">type5</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="search__basic-col">
+                    <div class="search__basic-name">
+                        Smoke
+                    </div>
+                    <ul class="drop drop-basic-1">
+                        <li class="drop-box drop-box-basic">
+                            <a href="#" class="drop-btn drop-btn-basic">
+                                <span>No</span>
+                            </a>
+                            <ul class="drop-menu drop-menu-basic">
+                                <li><a href="#">No</a></li>
+                                <li><a href="#">Yes</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="search__basic-col">
+                    <div class="search__basic-name">
+                        Children
+                    </div>
+                    <ul class="drop drop-basic-1">
+                        <li class="drop-box drop-box-basic">
+                            <a href="#" class="drop-btn drop-btn-basic">
+                                <span>No</span>
+                            </a>
+                            <ul class="drop-menu drop-menu-basic">
+                                <li><a href="#">No</a></li>
+                                <li><a href="#">Yes</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="search__basic-col">
+                    <div class="search__basic-name">
+                        Drink
+                    </div>
+                    <ul class="drop drop-basic-1">
+                        <li class="drop-box drop-box-basic">
+                            <a href="#" class="drop-btn drop-btn-basic">
+                                <span>No</span>
+                            </a>
+                            <ul class="drop-menu drop-menu-basic">
+                                <li><a href="#">No</a></li>
+                                <li><a href="#">Yes</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="search__more">
+            <div class="search__more-col">
+                <div class="search__more-name">
+                    Country
+                </div>
+                <ul class="drop drop-more">
+                    <li class="drop-box drop-box-more">
+                        <a href="#" class="drop-btn drop-btn-more">
+                            <span>No</span>
+                        </a>
+                        <ul class="drop-menu drop-menu-more">
+                            <li><a href="#">No</a></li>
+                            <li><a href="#">Yes</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="search__more-col">
+                <div class="search__more-name">
+                    Marital status
+                </div>
+                <ul class="drop drop-more">
+                    <li class="drop-box drop-box-more">
+                        <a href="#" class="drop-btn drop-btn-more">
+                            <span>No</span>
+                        </a>
+                        <ul class="drop-menu drop-menu-more">
+                            <li><a href="#">No</a></li>
+                            <li><a href="#">Yes</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="search__more-col">
+                <div class="search__more-name">
+                    Drink
+                </div>
+                <ul class="drop drop-more">
+                    <li class="drop-box drop-box-more">
+                        <a href="#" class="drop-btn drop-btn-more">
+                            <span>No</span>
+                        </a>
+                        <ul class="drop-menu drop-menu-more">
+                            <li><a href="#">No</a></li>
+                            <li><a href="#">Yes</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="search__more-col">
+                <div class="search__more-name">
+                    English proficiency
+                </div>
+                <ul class="drop drop-more">
+                    <li class="drop-box drop-box-more">
+                        <a href="#" class="drop-btn drop-btn-more">
+                            <span>No</span>
+                        </a>
+                        <ul class="drop-menu drop-menu-more">
+                            <li><a href="#">No</a></li>
+                            <li><a href="#">Yes</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="search__more-col">
+                <div class="search__more-name search__more-name-color">
+                    Sort results by:
+                </div>
+                <ul class="drop drop-more">
+                    <li class="drop-box drop-box-more">
+                        <a href="#" class="drop-btn drop-btn-more">
+                            <span>No</span>
+                        </a>
+                        <ul class="drop-menu drop-menu-more">
+                            <li><a href="#">No</a></li>
+                            <li><a href="#">Yes</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="search__more-col">
+                <div class="search__more-name search__more-name-color">
+                    Only Show Users:
+                </div>
+                <ul class="drop drop-more">
+                    <li class="drop-box drop-box-more">
+                        <a href="#" class="drop-btn drop-btn-more">
+                            <span>No</span>
+                        </a>
+                        <ul class="drop-menu drop-menu-more">
+                            <li><a href="#">No</a></li>
+                            <li><a href="#">Yes</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="search__more-col search__more-col-check">
+                <div class="search__more-name search__more-name-color">
+                    Only Show Users
+                </div>
+                <label class="search__more-item search__more-item-check">
+                    <input class="search__more-checkbox" type="checkbox">
+                    <span class="search__more-title">With video clips only</span>
+                </label>
+            </div>
+            <div class="search__btn">
+                <a href="#" class="btn btn-modal">Show matches</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="modal">
+
+</div>
 </body>
 
 </html>

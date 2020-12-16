@@ -8,6 +8,8 @@ jQuery(document).ready(function () {
   searchRange();
   girlsOnline();
   rangeSlider();
+  openSearchMenu();
+
 
 });
 
@@ -21,7 +23,7 @@ function initDropdown() {
 
 function openHeaderMenu() {
   $(".header__btn-open").click(function () {
-    $(".header__btn-open span").toggleClass("active")
+    $(".header__btn-open span").toggleClass("active");
     $(".header__nav").toggleClass("open");
   })
 }
@@ -35,8 +37,23 @@ function initSlider() {
     slidesToScroll: 1,
     variableWidth: true,
   })
-
 }
+
+
+function openSearchMenu(){
+  $(".search-btn").click(function(){
+    $(".search__block").addClass("active");
+    $(".modal").addClass("active");
+    $("body").css("overflow-y", "hidden");
+  })
+
+  $(".search__top-btn").click(function(){
+    $(".search__block").removeClass("active");
+    $(".modal").removeClass("active");
+    $("body").css("overflow-y", "auto");
+  })
+}
+
 
 function searchRange() {
   $(".search__range").ionRangeSlider({

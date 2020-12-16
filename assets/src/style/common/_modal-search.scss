@@ -4,9 +4,21 @@
         max-width: 720px;
         width: 100%;
         padding: 0px 40px;
+        display: none;
+        right: 0;
+        top: 0;
+        position: absolute;
+        background-color: #fff;
+        z-index: 20;
+        height: 100vh;
+        overflow-y: scroll;
         @media (max-width: 700px){
             padding: 0px 20px;
         }
+    }
+    &__block.active{
+        display: block;
+
     }
     &__top{
         display: flex;
@@ -334,6 +346,17 @@
     }
 }
 
-// .ui-slider{
-//     background-color: red;
-// }
+.modal{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    overflow: auto;
+    display: none;
+}
+.modal.active{
+    display: block;
+}

@@ -9,17 +9,39 @@ jQuery(document).ready(function () {
   girlsOnline();
   rangeSlider();
   openSearchMenu();
+  hoverEffect();
 
 
 });
 
 function initDropdown() {
-  $(".drop-box").click(function (e) {
+  $(".drop-btn").click(function (e) {
     e.preventDefault();
-    $(this).find(".drop-menu").toggleClass("active");
-    $(this).find(".drop-btn").toggleClass("active");
+    // $(this).closest(".drop-box").toggleClass("active");
+    // $(this).closest(".drop-box").find(".drop-btn").toggleClass("active");
+
+
+    let alldropBox = $(".drop-box");
+    let currentDropBox = $(this).closest(".drop-box");
+
+    if(currentDropBox.hasClass("active")){
+      currentDropBox.removeClass("active");
+    } else {
+      alldropBox.removeClass("active");
+      currentDropBox.addClass("active");
+    }
+    
+  })
+
+  $("body").click(function (e){
+    let block = $(".drop-box");
+
+    if(block.has(e.target).length == 0){
+      block.removeClass("active");
+    }
   })
 }
+
 
 function openHeaderMenu() {
   $(".header__btn-open").click(function () {
@@ -111,7 +133,6 @@ function rangeSlider() {
    
   });
 }
-
 
 
 

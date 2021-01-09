@@ -97,10 +97,14 @@
     } 
     &__menu{
         margin-top: 24px;
+        
         li{
             border-radius: 8px;
             margin-bottom: 8px;
-            padding: 4px;
+            transition: all .3s;
+            a{
+                padding: 4px;
+            }
         }
         &-item{
             align-items: center;
@@ -112,9 +116,11 @@
             color: $blue-magenta;
             font-weight: 500;
             margin-left: 12px;
+            transition: all .3s;
         }
         li:first-child{
             border: 1px solid #4045BA;
+            
         }
         li:nth-child(2){
             border: 1px solid #CE49D0;
@@ -149,6 +155,7 @@
     &__contact-icon,
     &__favorites-icon{
         position: relative;
+        transition: all .3s;
         &:before{
             position: absolute;
             font-family: "ntsame";
@@ -156,6 +163,7 @@
             left: 50%;
             top: 50%;
             transform: translate(-50%, -50%);
+            transition: all .3s;
         }
     }
 
@@ -166,6 +174,7 @@
         &:before{
             content: "\e906";
             color: #4045BA;
+            
         }
     }
     &__message-icon{
@@ -210,6 +219,115 @@
             color: #E1DB4B;
         }
     }
+
+
+
+    &__menu{
+        li:first-child:hover{
+            background-color: #4045BA;
+            .profile__chat-icon{
+                background-color: rgba(255,255,255,.2);
+                
+                z-index: 100;
+                &:before{
+                    color: $white;
+                }
+            }
+            .profile__menu-text{
+                color: $white;
+            }
+        }
+        li:nth-child(2):hover{
+            background-color: #CE49D0;
+            .profile__message-icon{
+                background-color: rgba(255,255,255,.2);
+                
+                z-index: 100;
+                &:before{
+                    color: $white;
+                }
+            }
+            .profile__menu-text{
+                color: $white;
+            }
+        }
+        li:nth-child(3):hover{
+            background-color:  #ED6E7F;
+            .profile__video-icon{
+                background-color: rgba(255,255,255,.2);
+                
+                z-index: 100;
+                &:before{
+                    color: $white;
+                }
+            }
+            .profile__menu-text{
+                color: $white;
+            }
+        }
+        li:nth-child(4):hover{
+            background-color:  #E2C291;
+            .profile__present-icon{
+                background-color: rgba(255,255,255,.2);
+                
+                z-index: 100;
+                &:before{
+                    color: $white;
+                }
+            }
+            .profile__menu-text{
+                color: $white;
+            }
+        }
+        li:nth-child(5):hover{
+            background-color: #EF4040;
+            .profile__interest-icon{
+                background-color: rgba(255,255,255,.2);
+                
+                z-index: 100;
+                &:before{
+                    color: $white;
+                }
+            }
+            .profile__menu-text{
+                color: $white;
+            }
+        }
+        li:nth-child(6):hover{
+            background-color:#91B0E2;
+            .profile__contact-icon{
+                background-color: rgba(255,255,255,.2);
+                
+                z-index: 100;
+                &:before{
+                    color: $white;
+                }
+            }
+            .profile__menu-text{
+                color: $white;
+            }
+        }
+        li:nth-child(7):hover{
+            background-color:#E1DB4B;
+            .profile__favorites-icon{
+                background-color: rgba(255,255,255,.2);
+                
+                z-index: 100;
+                &:before{
+                    color: $white;
+                }
+            }
+            .profile__menu-text{
+                color: $white;
+            }
+        }
+    }
+
+
+
+
+
+
     &__right{
         // width: 100%;
         width: 70%;
@@ -245,6 +363,7 @@
             font-size: 600;
             border-radius: 5px;
             cursor: pointer;
+            transition: color 0.3s;
             &:before{
                 position: absolute;
                 content: "\e906";
@@ -253,6 +372,9 @@
                 top: 50%;
                 transform: translate(0, -50%);
                 font-size: 16px;
+            }
+            &:hover{
+                color: #352f55;
             }
             
         }

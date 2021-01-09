@@ -60,11 +60,11 @@
         border-radius: 10px;
         // padding: 12px;
         padding: 0px 0px 12px 12px;
-        a{
-            &.btn-video-6{
-                color: #7298D7;
-            }
-        }
+        // a{
+        //     &.btn-video-6{
+        //         color: #7298D7;
+        //     }
+        // }
     }
     &__btn{
         padding-top: 100px;
@@ -634,37 +634,45 @@
             &-first{
                 border-radius: 0px 0px 0px 9px;
                 border-top: 2px solid #4045BA;
+                transition: background-color 0.3s;
                 &:before{
                     content: "\e906";
                     color: #4045BA;
                 }
                 &:hover{
-                    opacity: 0.5;
+                    background-color: #878ac4;
+                    opacity: .9;
+                    
                 }
             }
             &-second{
                 border-top: 2px solid #CE49D0;
+                transition: background-color 0.3s;
                 &:before{
                     content: "\e917";
                     color: #CE49D0;
                 }
                 &:hover{
-                    opacity: 0.5;
+                    background-color: #c398c4;
+                    opacity: .9;
                 }
             }
             &-third{
                 border-top: 2px solid #FFA532;
+                transition: background-color 0.3s;
                 &:before{
                     content: "\e91c";
                     color: #FFA532;
                 }
                 &:hover{
-                    opacity: 0.5;
+                    background-color: #e9c69b;
+                    opacity: .9;
                 }
             }
             &-fourth{
                 border-radius: 0px 0px 9px 0px;
                 border-top: 2px solid #40BAB3;
+                transition: background-color 0.3s;
                 &:before{
                     position: absolute;
                     content: "\e934";
@@ -674,7 +682,8 @@
                     color: #40BAB3;
                 }
                 &:hover{
-                    opacity: 0.5;
+                    background-color: #9ddcd8;
+                    opacity: .9;
                 }  
             }
         }

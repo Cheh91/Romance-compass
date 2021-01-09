@@ -9,28 +9,30 @@
 
     &.btn-secondary{
         background-color: $violet;
-        border: 1px  solid transparent;
+        border: 2px  solid transparent;
         transition: all .3s;
+        line-height: 44px;
         &:hover{
             background-color: transparent;
-            border: 1px solid $violet;
+            border: 2px solid $violet;
             color: $violet;
         }
     }
 
     &-sm{
         line-height: 38px;
-        border: 1px solid $black;
+        border: 2px solid $black;
     }
 
     &.btn-white{
         background-color: $white;
         color: $darkBlue;
-        border: 1px solid transparent;
+        border: 2px solid transparent;
         transition: all .3s;
+        line-height: 44px;
         &:hover{
             background-color: transparent;
-            border: 1px solid $white;
+            border: 2px solid $white;
             color: $white;
         }
     }
@@ -41,6 +43,16 @@
     &.btn-modal{
         background-color: $primary;
         display: block;
+        line-height: 44px;
+        border: 2px solid transparent;
+        transition: border .3s, color .3s, background-color .3s;
+        &:hover{
+            border: 2px solid $primary;
+            background-color: transparent;
+            color: $primary;
+        }
+       
+
     }
     &.btn-video{
         line-height: 40px;
@@ -51,36 +63,71 @@
         min-width: 60px;
         font-size: 18px;
         margin-top: 12px;
+        transition: all 0.3s;
         &-1{
             background-color: #40BAB3;
+            &:hover{
+                color: #40BAB3;
+                background-color: $white;
+            }
         }
         &-2{
             background-color: #CE49D0;
+            &:hover{
+                color: #CE49D0;
+                background-color: $white;
+            }
         }
         &-3{
             background-color: #ED6E7F;
+            &:hover{
+                color: #ED6E7F;
+                background-color: $white;
+            }
         }
         &-4{
             background-color: #4045BA;
+            &:hover{
+                color: #4045BA;
+                background-color: $white;
+            }
         }
         &-5{
             background-color: #FFA532;
+            &:hover{
+                color: #FFA532;
+                background-color: $white;
+            }
         }
         &-6{
-            background-color: #fff;
-            
+            background-color: #7298d7;
+            &:hover{
+                color: #7298d7;
+                background-color: $white;
+            }   
         }
         &-7{
             background-color: #5F34BB;
+            &:hover{
+                color: #5F34BB;
+                background-color: $white;
+            } 
         }
     }
     &.btn-video-profile{
         background-color: #2D3193;
-        line-height: 40px;
+        border: 2px solid transparent;
+        line-height: 36px;
         border-radius: 10px;
         display: block;
         width: 100%;
         min-width: 60px;
+        transition: background-color 0.3s, border 0.3s, color 0.3s;
+        &:hover{
+            background-color: transparent;
+            border: 2px solid #2D3193;
+            color: #2D3193;
+        }
         @media (max-width: 1100px){
             font-size: 12px;
         }

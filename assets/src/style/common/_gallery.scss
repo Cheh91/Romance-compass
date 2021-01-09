@@ -23,6 +23,11 @@
             display: flex;
             position: relative;
             overflow: hidden;
+            box-shadow: 0px 0px 10px rgba(36, 39, 67, 0.15);
+            transition: box-shadow 0.3s;
+            &:hover{
+                box-shadow: 0px 0px 20px rgba(36, 39, 67, 0.4);
+            }
             @media (max-width: 750px){
                 max-width: 400px;
                 margin: 0 auto;
@@ -47,6 +52,18 @@
                 &.offline{
                     background-color: #C8CFD6;
                 }
+                @media (max-width: 450px){
+                    right: -25px;
+                    top: -42px;
+                    width: 70px;
+                    height: 70px;
+                    span{
+                        position: absolute;
+                        bottom: 7px;
+                        left: 10px;
+                        font-size: 12px;
+                    }
+                }
             }
         }
         img{
@@ -68,6 +85,10 @@
             font-weight: 600;
             color: $blue-magenta;
             margin-bottom: 13px;
+            transition: color 0.3s;
+            &:hover{
+                color: rgba(64, 69, 186, 0.2);
+            }
             
         }
         &-age{
@@ -87,6 +108,7 @@
                 a{
                     display: flex;
                     align-items: center;
+                    
                     span{
                         width: 32px;
                         height: 32px;
@@ -95,6 +117,7 @@
                         &.chat-icon{
                             background-color: rgba(64, 69, 186, 0.2);
                             position: relative;
+                            transition: background-color 0.3s;
                             &:before{
                                 position: absolute;
                                 content: "\e906";
@@ -104,11 +127,14 @@
                                 left: 50%;
                                 top: 50%;
                                 transform: translate(-50%, -50%);
+                                transition: color 0.3s;
                             }
+                            
                         }
                         &.message-icon{
                             background-color: rgba(206, 73, 208, 0.2);
                             position: relative;
+                            transition: background-color 0.3s;
                             &:before{
                                 position: absolute;
                                 content: "\e917";
@@ -118,12 +144,14 @@
                                 left: 50%;
                                 top: 50%;
                                 transform: translate(-50%, -50%);
+                                transition: color 0.3s;
                             }
 
                         }
                         &.clips-icon{
                             background-color: rgba(237, 110, 127, 0.2);
                             position: relative;
+                            transition: background-color 0.3s;
                             &:before{
                                 position: absolute;
                                 content: "\e92c";
@@ -133,6 +161,7 @@
                                 left: 50%;
                                 top: 50%;
                                 transform: translate(-50%, -50%);
+                                transition: color 0.3s;
                             }
                         }
                     }
@@ -141,6 +170,27 @@
                         line-height: 14px;
                         padding-left: 12px;
                         color: $blue-magenta;
+                    }
+                    &:hover{
+                        .chat-icon{
+                            background-color: #4045BA;
+                            &:before{
+                                color: $white;
+                            }
+                        }
+                        .message-icon{
+                            background-color: #CE49D0;
+                            &:before{
+                                color: $white;
+                            }
+                        }
+                        .clips-icon{
+                            background-color: #ED6E7F;
+                            &:before{
+                                color: $white;
+                            }
+                        }
+                        
                     }
                 }  
             }

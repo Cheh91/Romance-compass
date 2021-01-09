@@ -85,7 +85,7 @@
             width: 100%;
             min-height: 420px;
             overflow-y: scroll;
-            transition: all .5s;
+            transition: all .3s;
             height: 100vh;
         }
         &.open{
@@ -101,11 +101,13 @@
                 flex-direction: column;
             }
             li{
-                padding: 8px 16px;
+                // padding: 8px 16px;
                 border-radius: 10px;
                 cursor: pointer;
                 a{
                     color: $black;
+                    padding: 7.5px 16px;
+                    line-height: 32px;
                 }
 
             }
@@ -119,7 +121,7 @@
                 }
             }
             li:last-child{
-                border: 1px solid $black;
+                border: 2px solid $black;
                 background-color: $violet;
                 width: 116px;
                 line-height: 38px;

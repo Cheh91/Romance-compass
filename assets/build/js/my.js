@@ -9,7 +9,6 @@ jQuery(document).ready(function () {
   girlsOnline();
   rangeSlider();
   openSearchMenu();
-  hoverEffect();
 
 
 });
